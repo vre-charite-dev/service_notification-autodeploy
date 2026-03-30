@@ -6,7 +6,7 @@ authors = ["Indoc Research"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
-common = "0.0.19"
+common = { git = "https://github.com/vre-charite-autodeploy/service_common.git", branch="main" }
 logger = "0.1.0"
 fastapi = "0.62.0"
 FastAPI-SQLAlchemy = "0.2.1"
@@ -39,8 +39,3 @@ requests = "2.24.0"
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
-
-[[tool.poetry.source]]
-name = "pilot"
-url = "https://git.bihealth.org/api/v4/groups/vre/-/packages/pypi/simple"
-default = true
